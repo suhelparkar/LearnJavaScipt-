@@ -1,0 +1,14 @@
+.left {
+    width: 20%;
+    clear: both;
+    float: left;
+}
+.right {
+    width: 15%;
+    margin-left: 10px;
+    float:left;
+    margin-top: 15px;
+}
+fieldset{
+    width: 40%;
+}

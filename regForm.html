@@ -6,73 +6,107 @@
     <script type="text/javascript" src="regForm.js"></script>
 </head>
 <body>
+<header><h2>Sign Up Here</h2></header>
 <article>
     <div>
         <form id="myForm" onsubmit="return validateForm();">
             <fieldset>
-                <legend>Simple Form</legend>
-            <div>
-                <div class="left">
-                    <p><label for="firstnameLabel">Firstname :</label></p>
+                <legend>Simple Sign-Up Form</legend>
+                <div>
+                    <div class="left">
+                        <p><label for="firstnameLabel">Firstname<span>*</span> :</label></p>
+                    </div>
+                    <div class="right">
+                        <input id="firstname" name="firstname" type="text">
+                    </div>
                 </div>
-                <div class="right">
-                    <input id="firstname" name="firstname" type="text">
+                <div>
+                    <div class="left">
+                        <p><label for="lastnameLabel">Lastname<span>*</span> :</label></p>
+                    </div>
+                    <div class="right">
+                        <input id="lastname" name="lastname" type="text">
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="left">
-                    <p><label for="lastnameLabel">Lastname :</label></p>
+                <div>
+                    <div class="left">
+                        <p><label for="emailLabel">Email ID<span>*</span> :</label></p>
+                    </div>
+                    <div class="right">
+                        <input id="email" name="email" type="text">
+                    </div>
                 </div>
-                <div class="right">
-                    <input id="lastname" name="lastname" type="text">
+                <div>
+                    <div class="left">
+                        <p><label for="usernameLabel">Username<span>*</span> :</label></p>
+                    </div>
+                    <div class="right">
+                        <input id="username" name="username" type="text">
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="left">
-                    <p><label for="emailLabel">Email ID :</label></p>
+                <div>
+                    <div class="left">
+                        <p><label for="passwordLabel">Password<span>*</span> :</label></p>
+                    </div>
+                    <div class="right">
+                        <input id="password" name="password" type="password">
+                    </div>
                 </div>
-                <div class="right">
-                    <input id="email" name="email" type="text">
+                <div>
+                    <div class="left">
+                        <p><label for="confirmpassworddLabel">Confirm Password<span>*</span> :</label></p>
+                    </div>
+                    <div class="right">
+                        <input id="confirmpassword" name="confirmpassword" type="password">
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="left">
-                    <p><label for="dobLabel">Date of Birth :</label></p>
+                <div>
+                    <div class="left">
+                        <p><label for="dobLabel">Date of Birth<span>*</span> :</label></p>
+                    </div>
+                    <div class="right">
+                        <input id="dob" name="dob" type="date">
+                    </div>
                 </div>
-                <div class="right">
-                    <input id="dob" name="dob" type="text">
+                <div>
+                    <div class="left">
+                        <p><label for="genderLabel">Gender<span>*</span> :</label></p>
+                    </div>
+                    <div class="right">
+                        <input id="male" name="gender" value="male" type="radio">Male
+                    </div>
+                    <div class="right">
+                        <input id="female" name="gender" value="female" type="radio">Female
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="left">
-                    <p><label for="genderLabel">Gender :</label></p>
+                <div>
+                    <div class="left">
+                        <p><label for="interestLabel">Select Interest :</label></p>
+                    </div>
+                    <div class="right">
+                        <select name="interest">
+                            <option value="select">select</option>
+                            <option value="sports">Sports</option>
+                            <option value="ent">Entertainment</option>
+                            <option value="tech">Technology</option>
+                            <option value="politics">Politics</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="right">
-                    <input id="male" name="gender" value="male" type="radio">Male
+                <div>
+                    <div class="left">
+                        <p><label for="aboutmeLabel">About Me :</label></p>
+                    </div>
+                    <div class="right">
+                        <textarea id="aboutme" name="aboutme" cols="25" rows="3"
+                                  placeholder="Write something about you."></textarea>
+                    </div>
                 </div>
-                <div class="right">
-                    <input id="female" name="gender" value="female" type="radio">Female
+                <div>
+                    <div class="left">
+                        <p><input id="submitButton" type="submit" value="Sign Up"></p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="left">
-                  <p><label for="interestLabel">Select Interest :</label> </p>
-                </div>
-                <div class="right">
-                    <select name="interest">
-                        <option value="select">select</option>
-                        <option value="sports">Sports</option>
-                        <option value="ent">Entertainment</option>
-                        <option value="tech">Technology</option>
-                        <option value="politics">Politics</option>
-                    </select>
-                </div>
-            </div>
-            <div>
-                <div class="left">
-                    <input type="submit" value="submit">
-                </div>
-            </div>
             </fieldset>
         </form>
     </div>

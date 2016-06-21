@@ -1,7 +1,8 @@
 .left {
-    width: 20%;
+    width: 30%;
     clear: both;
     float: left;
+    margin-left: 20%;
 }
 .right {
     width: 15%;
@@ -10,5 +11,24 @@
     margin-top: 15px;
 }
 fieldset{
+    margin-left: 30%;
     width: 40%;
+}
+#submitButton{
+    margin-left: 80%;
+}
+span{
+    color: red;
+}
+header{
+    text-align: center;
+    color: white;
+}
+body{
+    background-color: royalblue;
+}
+legend{
+    color: #A52A2A;
+    font-weight: bold;
+
 }
